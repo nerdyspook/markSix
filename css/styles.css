@@ -1,0 +1,142 @@
+/*  ================================= Google Fonts ========================== */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+/* ============================== Colors =========================== */
+:root {
+    --primary-color: #ffdd00; /* rgba(255,221,0,255) */
+    --primary-text-color: #374151;
+    --secondary-text-color: #F9FAFB;
+}
+
+* {
+    font-family: 'Kalam', cursive;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    background-color: #374151;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 8.5vh;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    padding: 0 1rem;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+.navbrand {
+    font-size: 1.5rem;
+
+}
+
+main{
+    padding-top: 10vh;
+    height: 80vh;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 25vw;
+}
+
+h1 {
+    color: var(--primary-text-color);
+}
+#txt-input {
+    border-radius: 10px;
+    padding: 1rem;
+    border: 2px solid #6B7280;
+    display: block;
+    margin: .7rem auto;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid #6B7280;
+}
+
+button i {
+    transform: rotate(90deg);
+    color: #374151;
+}
+
+button:active {
+    border: solid #374151;
+    transition: all .2s;
+}
+
+button i:active {
+    color: #6B7280;
+    transition: all .2s;
+}
+
+#output {
+    border-radius: 10px;
+    padding: 1rem;
+    border: 2px solid #6B7280;
+    display: block;
+    margin: 1rem auto;
+    height: 8vh;
+    width: 280px;
+    background-color: #F9FAFB;
+}
+
+footer {
+    background-color: #374151;
+    height: 9.35vh;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-size: .7rem;
+    transform: translateX(1rem) translateY(-.8rem);
+}
+
+@media screen and (min-width: 768px) {
+    footer p {
+        transform: translateX(1rem) translateY(-.8rem);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    a {
+        font-size: .9rem;
+    }
+
+    footer section {
+        transform: translateY(-.6rem);
+    }
+    
+}
